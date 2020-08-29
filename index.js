@@ -11,7 +11,7 @@ const questions = [
         name: 'Title',
         },
         {
-        message: 'The introduction or description for your project: ',
+        message: 'The introduction or description for your project: \n use semicolon(;) for new paragraph!\n',
         name: 'Introduction',
         },
         {
@@ -23,11 +23,11 @@ const questions = [
         name: 'screenshotPath',
         },
         {
-        message: 'Instructions for the installation of your project: ',
+        message: 'Instructions for the installation of your project: \n use semicolon(;) for new paragraph!\n',
         name: 'Installation',
         },
         {
-        message: 'Instructions for the usage of your project: ',
+        message: 'Instructions for the usage of your project: \n use semicolon(;) for new paragraph!\n',
         name: 'Usage',
         },
         {
@@ -55,15 +55,15 @@ const questions = [
         name: 'Credits',
         },
         {
-        message: 'Instructions for those who might contribute to your project: ',
+        message: 'Instructions for those who might contribute to your project: \n use semicolon(;) for new paragraph!\n',
         name: 'Contributing',
         },
         {
-        message: 'What tests exist for your project? ',
+        message: 'What tests exist for your project? \n use semicolon(;) for new paragraph!\n',
         name: 'Tests',
         },
         {
-        message: 'If people have questions, how can they contact you? ',
+        message: 'If people have questions, how can they contact you? \n use semicolon(;) for new paragraph!\n',
         name: 'Contact',
         },
     ];
@@ -105,7 +105,7 @@ function writeToFile(data) {
             createdHTML += '\n\n';
         } else if (!(data[key]==="") && !(key==="link" || key==="screenshotPath")) {
             createdHTML += `## ${key}:\n\n`;
-            createdHTML += data[key].split("\n").join("\n");
+            createdHTML += data[key].split(";").join("\n\n");
             createdHTML += "\n\n";
         }
 
@@ -120,9 +120,60 @@ function writeToFile(data) {
     })
 }
 
+async function createBadges(){
+    let moreBadges=true;
+    let createdBadges = []
+    while (moreBadges) {
+        const { label } = await inquirer.prompt({
+        message: 'Badge LABEL (gray left-side text): ',
+        name: 'label',
+        });
+
+        const { message } = await inquirer.prompt({
+        message: 'Badge MESSAGE (color right-side text): ',
+        name: 'message',
+        });
+        
+        const { color } = await inquirer.prompt({
+        message: 'Badge COLOR: ',
+        name: 'color',
+        });
+
+        const { more } = await inquirer.prompt({
+        type: 'confirm',
+        message: 'Do you want to make another badge? ',
+        name: 'more',
+        });
+
+        createdBadges.push({
+            label: label,
+            message: message,
+            color: color,
+        })
+        if (!(more)){
+            moreBadges = false;
+        }
+    }  
+    console.log(createdBadges);
+    return createdBadges;
+}
+
+
+
 // function to initialize program
 function init() {
+    let badges;
     inquirer.prompt(questions).then(function(answers){
+        inquirer.prompt({
+            type:"confirm",
+            message:"Would you like to add badges to your README? ",
+            name:"anyBadges",
+        }).then(function(answers){
+            if (answers.anyBadges===true){
+                badges = createBadges();
+            }
+        })
+        console.log(badges);
         writeToFile(answers);
     })
 
