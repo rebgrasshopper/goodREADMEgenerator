@@ -1,6 +1,6 @@
-# ${name}
+`# ${data[Title]}
 
-![screenshot of ${name}](${screenshotPath})
+![screenshot of ${data[Title]}](${screenshotPath})
 ${link}
 
 
@@ -40,4 +40,4 @@ Thanks to my coding co-op, and you can catch some of 'em here:
 
 ## License ##
 
-GNU General Public License
+GNU General Public License`
