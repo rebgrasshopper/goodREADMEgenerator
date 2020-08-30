@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const util = require("util");
-let answers;
+let results;
+let badges;
 
 //ask user Contact
 
@@ -70,7 +70,7 @@ const questions = [
 
 
 // function to write README file
-function writeToFile(data) {
+function writeToFile(data, badges) {
     let tableOfContents = [];
     let createdHTML = "";
 
@@ -83,7 +83,8 @@ function writeToFile(data) {
             i++;
         }
     }
-    let listOfCredits = "- " + data.Credits.split(",").join("\n- ")
+    let listOfCredits = "- " + data.Credits.split(",").join("\n- ");
+    
 
     //add strings to createdHTML
     for (let key in data){
@@ -94,6 +95,13 @@ function writeToFile(data) {
         } else if (!(data[key]==="") && (key==="Title")) {
             createdHTML += `# ${data.Title}`;
             createdHTML += "\n\n";
+            if (badges.length > 0){
+                for (let badge of badges){
+                    createdHTML += `![badge: ${badge.label.trim()}-${badge.message.trim()}](https://img.shields.io/badge/${badge.label.trim().replace(/ /g, '%20')}-${badge.message.trim().replace(/ /g, '%20')}-${badge.color.trim().replace(/ /g, '%20')})`
+                }
+                createdHTML += '\n\n';
+            }
+
             if (!(data.screenshotPath === "")) {
                 createdHTML += `![screenshot of ${data.Title}](${data.screenshotPath})\n\n`;
             } 
@@ -155,26 +163,25 @@ async function createBadges(){
         }
     }  
     console.log(createdBadges);
-    return createdBadges;
+    writeToFile(results, createdBadges);
 }
 
 
 
 // function to initialize program
 function init() {
-    let badges;
     inquirer.prompt(questions).then(function(answers){
+        results = answers;
         inquirer.prompt({
             type:"confirm",
             message:"Would you like to add badges to your README? ",
             name:"anyBadges",
         }).then(function(answers){
             if (answers.anyBadges===true){
-                badges = createBadges();
+                createBadges();
             }
         })
-        console.log(badges);
-        writeToFile(answers);
+
     })
 
 
