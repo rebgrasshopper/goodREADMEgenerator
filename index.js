@@ -128,6 +128,7 @@ function writeToFile(data, badges) {
     })
 }
 
+//create badges
 async function createBadges(){
     let moreBadges=true;
     let createdBadges = []
