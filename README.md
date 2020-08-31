@@ -1,6 +1,6 @@
 # Good README Generator
 
-![badge: Made with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f)![badge: License-GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue)[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-aaee.svg)](https://GitHub.com/rebgrasshopper/)![badge: Uses-Inquirer](https://img.shields.io/badge/Uses-Inquirer-orange)
+![badge: Made with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow)![badge: License-GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue)[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-aaee.svg)](https://GitHub.com/rebgrasshopper/)![badge: Uses-Inquirer](https://img.shields.io/badge/Uses-Inquirer-orange)
 
 ![screenshot of Good README Generator](./assets/images/screenshot.png)
 Find it on [GitHub](www.github.com/rebgrasshopper/goodREADMEgenerator)
