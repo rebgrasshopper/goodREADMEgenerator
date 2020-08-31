@@ -1,8 +1,10 @@
 # Good README Generator
 
-![badge: License-GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue)![badge: Made with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f)
+![badge: Made with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f)![badge: License-GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue)[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc00.svg)](https://GitHub.com/rebgrasshopper/)
 
 ![screenshot of Good README Generator](./assets/images/screenshot.png)
+Find it on [GitHub](www.github.com/rebgrasshopper/goodREADMEgenerator)
+
 
 Table Of Contents:
 
@@ -30,6 +32,8 @@ You are free to use the code for any project you wish within the limits of the G
 GNU General Public License v3.0
 
 ## Credits:
+
+As always, thanks to my coding co-op, and you can find some of 'em here:
 
 - [Zachary Bryan](https://github.com/zacharybryan)
 - [Tim Sanders](https://github.com/tbsanders5)
