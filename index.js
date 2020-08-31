@@ -3,8 +3,7 @@ const inquirer = require("inquirer");
 let results;
 let badges;
 
-//ask user Contact
-
+//inquirer prompts
 const questions = [
         {
         message: 'The title of your project: ',
@@ -118,12 +117,13 @@ function writeToFile(data, badges) {
         }
 
     }
-    console.log("table of contents: ", tableOfContents);
 
-
+    //write README.md file with createdHTML
     fs.writeFile('README.md', createdHTML, function(err){
         if (err) {
             console.log(err);
+        } else {
+            console.log("README completed.");
         }
     })
 }
@@ -162,7 +162,6 @@ async function createBadges(){
             moreBadges = false;
         }
     }  
-    console.log(createdBadges);
     writeToFile(results, createdBadges);
 }
 
