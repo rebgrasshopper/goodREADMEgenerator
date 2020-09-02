@@ -1,9 +1,9 @@
 # Good README Generator
 
-![badge: Made with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow)![badge: License-GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue)[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-aaee.svg)](https://GitHub.com/rebgrasshopper/)![badge: Uses-Inquirer](https://img.shields.io/badge/Uses-Inquirer-orange)
+![badge: License-GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue)![badge: Made with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow)![badge: Open Source-Love](https://img.shields.io/badge/Open%20Source-Love-aa1ef2.svg)![Badge:Ask Me-Anything](https://img.shields.io/badge/Ask%20me-anything-aaee.svg)![badge: Uses-Inquirer](https://img.shields.io/badge/Uses-Inquirer-orange)
 
 ![Screenshot of Good README Generator](./assets/images/screenshot.png)
-Find it on [GitHub](www.github.com/rebgrasshopper/goodREADMEgenerator)
+www.github.com/rebgrasshopper/goodREADMEgenerator
 
 
 Table Of Contents:
@@ -55,8 +55,8 @@ As always, thanks to my coding co-op, and you can find some of 'em here:
 
 ## Questions:
 
-Please feel free to contact me via:
-- [LinkedIn](https://www.linkedin.com/in/plover-brown-37b6981a5/)
+You can contact me with questions via:
 - [Email](plover.brown@gmail.com)
 - [GitHub](https://www.github.com/rebgrasshopper)
+- [LinkedIn](https://www.linkedin.com/in/plover-brown-37b6981a5/)
 
