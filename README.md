@@ -2,7 +2,7 @@
 
 ![badge: Made with-JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow)![badge: License-GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue)[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-aaee.svg)](https://GitHub.com/rebgrasshopper/)![badge: Uses-Inquirer](https://img.shields.io/badge/Uses-Inquirer-orange)
 
-![screenshot of Good README Generator](./assets/images/screenshot.png)
+![Screenshot of Good README Generator](./assets/images/screenshot.png)
 Find it on [GitHub](www.github.com/rebgrasshopper/goodREADMEgenerator)
 
 
@@ -22,6 +22,9 @@ This project is a markdown README generator designed to run in a command termina
 ## Installation:
 
 To install this project, download the source files from github, and access the folder via your terminal/console of choice. Run npm i to install dependancies (Inquirer), and run node index.js to start the generator.
+
+View the walkthrough here:
+[![Link to video of Good README Generator walkthrough](./assets/images/video-screenshot.png)](https://youtu.be/ttHr7hrG2sE)
 
 ## Usage:
 
@@ -50,7 +53,10 @@ As always, thanks to my coding co-op, and you can find some of 'em here:
 - [Johnny Lieu](https://github.com/johnnylieu)
 - [Robert Graham](https://github.com/Robmgraham)
 
-## Contact:
+## Questions:
 
-Please feel free to contact me via [LinkedIn](https://www.linkedin.com/in/plover-brown-37b6981a5/) or [email](plover.brown@gmail.com).
+Please feel free to contact me via:
+- [LinkedIn](https://www.linkedin.com/in/plover-brown-37b6981a5/)
+- [Email](plover.brown@gmail.com)
+- [GitHub](https://www.github.com/rebgrasshopper)
 
