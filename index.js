@@ -173,7 +173,7 @@ function writeToFile(data, badges) {
     }
 
     //write README.md file with createdHTML
-    fs.writeFile('README.md', createdHTML, function(err){
+    fs.writeFile('newReadMe.md', createdHTML, function(err){
         if (err) {
             console.log(err);
         } else {
